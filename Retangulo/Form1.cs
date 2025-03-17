@@ -16,5 +16,16 @@ namespace Retangulo
         {
             InitializeComponent();
         }
+
+        private void btnCalc_Click(object sender, EventArgs e)
+        {
+             var ladoA = double.Parse(lblresultadoAl.Text);
+            var ladoB = double.Parse(lblAlturaB.Text);
+            var ladoA = new Retangulo(ladoA);
+            var ladoB = new Retangulo(ladoB);
+
+
+                 var raio = double.Parse(txtResultado.Text);
+        }
     }
 }
