@@ -19,13 +19,14 @@ namespace Retangulo
 
         private void btnCalc_Click(object sender, EventArgs e)
         {
-             var ladoA = double.Parse(lblresultadoAl.Text);
-            var ladoB = double.Parse(lblAlturaB.Text);
-            var ladoA = new Retangulo(ladoA);
-            var ladoB = new Retangulo(ladoB);
-
-
-                 var raio = double.Parse(txtResultado.Text);
+             var ladoA = double.Parse(txtA.Text);
+            var ladoB = double.Parse(txtB.Text);
+            var retangulo = new Retangulo(ladoA,ladoB);
+            var  valorArea = retangulo.CalcArea();
+            var valorPeri= retangulo.CalcPerimetro();
+            lblresultadoAl.Text=valorArea.ToString();
+            lblResultaPe.Text=valorPeri.ToString();
+            
         }
     }
 }

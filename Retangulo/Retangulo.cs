@@ -17,13 +17,13 @@ namespace Retangulo
             LadoB = ladoB;
         }
 
-        public void CalcArea()
+        public double CalcArea()
         {
 
             return Math.Abs(LadoA * LadoB);
         }
 
-        public void CalcPerimetro() 
+        public double CalcPerimetro() 
         {
             return Math.Abs(LadoA + LadoB+LadoA+LadoB);
         }
