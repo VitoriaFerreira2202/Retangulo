@@ -20,7 +20,7 @@ namespace Retangulo
         public double CalcArea()
         {
 
-            return Math.Abs(LadoA * LadoB);
+            return Math.Abs((LadoA * LadoA)+(LadoB*LadoB));
         }
 
         public double CalcPerimetro() 
